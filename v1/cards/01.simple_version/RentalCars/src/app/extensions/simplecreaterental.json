@@ -1,7 +1,7 @@
 {
     "type": "crm-card",
     "data": {
-      "title": "Create Rental (Simple)",
+      "title": "Create Rental (Simple v1)",
       "uid": "create_rental",
       "location": "crm.record.tab",
       "module": {
