@@ -1,7 +1,7 @@
 {
   "type": "crm-card",
   "data": {
-    "title": "Cars on the location",
+    "title": "Cars on the location (Advanced)",
     "uid": "cars_on_location",
     "location": "crm.record.tab",
     "module": {
