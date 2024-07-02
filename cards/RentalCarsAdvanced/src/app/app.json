@@ -1,6 +1,6 @@
 {
-  "name": "Cars Rental",
-  "description": "This is an example private app that shows a custom card on the Contact record tab built with React-based frontend. This card demonstrates a simple handshake with HubSpot's serverless backend.",
+  "name": "Cars Rental Advanced Version",
+  "description": "This is a more advanced version of the example car rental app.",
   "uid": "car_rental",
   "scopes": [
     "crm.objects.contacts.read",
