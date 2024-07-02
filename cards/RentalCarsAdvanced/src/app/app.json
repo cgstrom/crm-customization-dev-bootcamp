@@ -14,10 +14,10 @@
     "crm": {
       "cards": [
         {
-          "file": "extensions/crm-cards.json"
+          "file": "extensions/advancedcreaterental.json"
         },
         {
-          "file": "extensions/crm-cards-1.json"
+          "file": "extensions/carsonlocation.json"
         }
       ]
     }
