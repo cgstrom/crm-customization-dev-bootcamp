@@ -1,4 +1,5 @@
 import {
+  Box,
   Button,
   DateInput,
   DescriptionList,
@@ -104,6 +105,11 @@ const Extension = ({ context, runServerless, sendAlert, fetchProperties }) => {
   return (
     <>
       <Flex direction="column" gap="sm">
+        <Button variant="primary" size="md" type="button">
+          Hmm how do I make this button clickable?
+        </Button>
+      </Flex>
+      <Flex direction="column" gap="sm">
         <Flex direction="row" justify="start" gap="sm" align="end">
           <Input
             name="zipCode"
@@ -163,6 +169,40 @@ const Extension = ({ context, runServerless, sendAlert, fetchProperties }) => {
           })}
         </TableBody>
       </Table>
+
+      <Divider />
+
+      <Text>
+        <Text format={{ fontWeight: "bold" }}>
+          Playing around with React components! This is bolded text.
+        </Text>
+        Hello {context.user.firstName}, this is non-bolded text. And it is displaying your user's first name in the card. Sweet!
+      </Text>
+      <Divider />
+      <Text>
+        What now? Explore all available{" "}
+        <Link href="https://developers.hubspot.com/docs/platform/ui-extension-components">
+          UI components
+        </Link>
+        , get an overview of{" "}
+        <Link href="https://developers.hubspot.com/docs/platform/ui-extensions-overview">
+          UI extensions
+        </Link>
+        , learn how to{" "}
+        <Link href="https://developers.hubspot.com/docs/platform/create-ui-extensions">
+          add a new custom card
+        </Link>
+        , jump right in with our{" "}
+        <Link href="https://developers.hubspot.com/docs/platform/ui-extensions-quickstart">
+          Quickstart Guide
+        </Link>
+        , or check out our{" "}
+        <Link href="https://github.com/HubSpot/ui-extensions-react-examples">
+          code Samples
+        </Link>
+        .
+      </Text>
+
     </>
   );
 };
