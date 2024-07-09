@@ -43,10 +43,21 @@ hubspot.extend(({ context, runServerlessFunction, actions }) => (
     runServerless={runServerlessFunction}
     sendAlert={actions.addAlert}
     fetchProperties={actions.fetchCrmObjectProperties}
+    openIframe={actions.openIframeModal}
   />
 ));
 
-const Extension = ({ context, runServerless, sendAlert, fetchProperties }) => {
+const Extension = ({ context, runServerless, sendAlert, fetchProperties, openIframe }) => {
+
+  const handleClick = () => {
+    openIframe({
+      uri: "https://www.clearpivot.com",
+      height: 1000,
+      width: 1000,
+      title: 'The ClearPivot website in an Iframe',
+      flush: true,
+    })
+  }
 
   const [locations, setLocations] = useState([]);
   const [locationsOnPage, setLocationsOnPage] = useState([]);
@@ -105,8 +116,8 @@ const Extension = ({ context, runServerless, sendAlert, fetchProperties }) => {
   return (
     <>
       <Flex direction="column" gap="sm">
-        <Button variant="primary" size="md" type="button">
-          Hmm how do I make this button clickable?
+        <Button type="submit" onClick={handleClick} variant="primary" size="md" type="button">
+          This is our ClearPivot website in an iframe!
         </Button>
       </Flex>
       <Flex direction="column" gap="sm">
