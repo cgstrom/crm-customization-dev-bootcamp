@@ -57,7 +57,7 @@ function fetchLocations({ lat_min, lat_max, lng_min, lng_max, pickupDate, return
             number_of_available_vehicles
             hs_object_id
             associations {
-              all_vehicles: p_vehicles_collection__vehicles_to_locations {
+              all_vehicles: p_vehicles_collection__associated_location_associated_vehicle {
                 items {
                   hs_object_id
                   model

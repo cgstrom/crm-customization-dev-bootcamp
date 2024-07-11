@@ -70,7 +70,7 @@ const Extension = ({ context, runServerless, sendAlert, fetchProperties, openIfr
 
   const [locationPage, setLocationPage] = useState(1);
 
-  const [zipCode, setZipCode] = useState("");
+  const [zipCode, setZipCode] = useState("72704");
 
 
   const [currentPage, setCurrentPage] = useState(1); // For controlling current page
@@ -116,8 +116,8 @@ const Extension = ({ context, runServerless, sendAlert, fetchProperties, openIfr
   return (
     <>
       <Flex direction="column" gap="sm">
-        <Button type="submit" onClick={handleClick} variant="primary" size="md" type="button">
-          This is our ClearPivot website in an iframe!
+        <Button type="submit" onClick={handleClick} variant="primary" size="md">
+          This is our ClearPivot website in an iframe yo
         </Button>
       </Flex>
       <Flex direction="column" gap="sm">
@@ -165,7 +165,7 @@ const Extension = ({ context, runServerless, sendAlert, fetchProperties, openIfr
                   <CrmActionLink
                     actionType="PREVIEW_OBJECT"
                     actionContext={{
-                      objectTypeId: "2-19860301",
+                      objectTypeId: "2-31261544",
                       objectId: location.id
                     }}
                     variant="secondary"
